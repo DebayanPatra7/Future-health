@@ -1,0 +1,858 @@
+
+/* =====================================
+   GLOBAL RESPONSIVE SETTINGS
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.front-page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #183b45;
+  background: #fff;
+  overflow-x: clip;
+}
+
+.front-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.front-navbar {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.front-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #087f8c;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.front-brand img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.front-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.front-nav-links a {
+  text-decoration: none;
+  color: #40565c;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.front-nav-links a:hover,
+.front-nav-links .front-active {
+  color: #078b91;
+}
+
+.front-nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.front-facility-btn,
+.front-login-btn {
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 7px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.front-facility-btn {
+  color: #078b91;
+  border: 1px solid #078b91;
+}
+
+.front-login-btn {
+  background: #078b91;
+  color: white;
+}
+
+/* Navigation button */
+
+.nav-link-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.nav-link-btn:hover {
+  color: #078b91;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.front-hero {
+  width: 100%;
+  min-height: 570px;
+  padding: 75px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: linear-gradient(120deg, #eafafa, #f4fbff);
+}
+
+.front-hero-content {
+  width: 100%;
+  max-width: 580px;
+  min-width: 0;
+}
+
+.front-tagline,
+.front-section-heading span,
+.front-about-content > span,
+.front-cta span {
+  color: #078b91;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.front-hero-content h1 {
+  font-size: 53px;
+  line-height: 1.2;
+  margin: 20px 0;
+  color: #173e49;
+}
+
+.front-hero-content h1 span {
+  color: #07999a;
+}
+
+.front-hero-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #63777c;
+}
+
+.front-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.front-primary-btn,
+.front-secondary-btn {
+  padding: 15px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.front-primary-btn {
+  background: #078b91;
+  color: white;
+}
+
+.front-secondary-btn {
+  color: #078b91;
+  border: 1px solid #078b91;
+}
+
+.front-trust {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  color: #4e6a70;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* =====================================
+   HERO VISUAL
+===================================== */
+
+.front-hero-visual {
+  width: 390px;
+  max-width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.front-circle {
+  width: 310px;
+  height: 310px;
+  max-width: 100%;
+  background: #bceeed;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.front-medical-icon {
+  font-size: 145px;
+}
+
+.front-plus {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 65px;
+  color: #078b91;
+}
+
+.front-floating-card {
+  position: absolute;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.front-card-one {
+  top: 45px;
+  right: -20px;
+}
+
+.front-card-two {
+  bottom: 35px;
+  left: -20px;
+}
+
+/* =====================================
+   HIGHLIGHTS
+===================================== */
+
+.front-highlights {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 30px 9%;
+  background: #087f8c;
+  color: white;
+  text-align: center;
+}
+
+.front-highlights h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #b9f3ed;
+}
+
+.front-highlights p {
+  margin: 0;
+}
+
+/* =====================================
+   SERVICES
+===================================== */
+
+.front-services {
+  width: 100%;
+  padding: 85px 8%;
+}
+
+.front-section-heading {
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.front-section-heading h2,
+.front-about-content h2 {
+  color: #173e49;
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.front-section-heading p {
+  color: #71858a;
+  line-height: 1.7;
+}
+
+.front-services-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.front-service-card {
+  min-width: 0;
+  padding: 30px 23px;
+  border: 1px solid #e5eeee;
+  border-radius: 12px;
+  background: white;
+  transition: 0.3s;
+}
+
+.front-service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 100, 110, 0.1);
+}
+
+.front-service-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  background: #e5f8f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.front-service-card h3 {
+  color: #173e49;
+  font-size: 19px;
+  margin-top: 22px;
+}
+
+.front-service-card p {
+  color: #71858a;
+  line-height: 1.7;
+  font-size: 14px;
+  min-height: 70px;
+}
+
+.front-service-card a {
+  color: #078b91;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
+.front-about {
+  width: 100%;
+  padding: 85px 9%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 70px;
+  background: #f7fbfb;
+}
+
+.front-about-visual {
+  width: 100%;
+  min-height: 330px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #d8f5f2, #edfafa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.front-about-visual span {
+  font-size: 150px;
+}
+
+.front-about-visual div {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  font-size: 55px;
+  color: #078b91;
+}
+
+.front-about-content {
+  min-width: 0;
+}
+
+.front-about-content p {
+  color: #71858a;
+  line-height: 1.8;
+}
+
+.front-about-content ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2.5;
+  color: #45666c;
+}
+
+.front-about-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 23px;
+  background: #078b91;
+  color: white;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =====================================
+   CALL TO ACTION
+===================================== */
+
+.front-cta {
+  width: 100%;
+  padding: 55px 9%;
+  background: #e6f7f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.front-cta h2 {
+  font-size: 32px;
+  color: #173e49;
+  margin: 12px 0;
+}
+
+.front-cta p {
+  color: #71858a;
+}
+
+.front-cta-btn {
+  background: #078b91;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* =====================================
+   FOOTER - FULL PAGE WIDTH
+===================================== */
+
+.front-footer {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 55px 7% 20px;
+  background: #123b45;
+  color: white;
+  box-sizing: border-box;
+}
+
+.front-footer-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 35px;
+}
+
+.front-footer h2 {
+  color: #67d6ce;
+}
+
+.front-footer h3 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.front-footer p {
+  color: #c0d3d5;
+  line-height: 1.8;
+  max-width: 320px;
+}
+
+.front-footer a {
+  display: block;
+  margin: 12px 0;
+  color: #c0d3d5;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.front-footer a:hover {
+  color: #67d6ce;
+}
+
+.front-footer-bottom {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #42616a;
+  padding-top: 20px;
+  color: #c0d3d5;
+  font-size: 13px;
+}
+
+/* =====================================
+   LAPTOP RESPONSIVENESS
+===================================== */
+
+@media (max-width: 1200px) {
+  .front-hero {
+    padding: 65px 5%;
+  }
+
+  .front-hero-content h1 {
+    font-size: 46px;
+  }
+
+  .front-services {
+    padding: 75px 5%;
+  }
+
+  .front-about {
+    padding: 75px 5%;
+    gap: 40px;
+  }
+
+  .front-footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* =====================================
+   TABLET RESPONSIVENESS
+===================================== */
+
+@media (max-width: 900px) {
+  .front-navbar {
+    padding: 15px 4%;
+    flex-wrap: wrap;
+  }
+
+  .front-nav-links {
+    gap: 15px;
+  }
+
+  .front-hero {
+    min-height: auto;
+    padding: 60px 5%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .front-hero-content {
+    max-width: 100%;
+  }
+
+  .front-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .front-hero-buttons,
+  .front-trust {
+    justify-content: center;
+  }
+
+  .front-hero-visual {
+    max-width: 100%;
+  }
+
+  .front-highlights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .front-about {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .front-about-visual {
+    min-height: 280px;
+  }
+
+  .front-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .front-footer-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+}
+
+/* =====================================
+   MOBILE RESPONSIVENESS
+===================================== */
+
+@media (max-width: 600px) {
+  .front-navbar {
+    padding: 12px 4%;
+    gap: 12px;
+  }
+
+  .front-brand {
+    font-size: 20px;
+  }
+
+  .front-brand img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .front-nav-links {
+    order: 3;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+
+  .front-nav-links a {
+    font-size: 13px;
+  }
+
+  .front-nav-buttons {
+    gap: 7px;
+  }
+
+  .front-facility-btn,
+  .front-login-btn {
+    padding: 9px 11px;
+    font-size: 12px;
+  }
+
+  .front-hero {
+    padding: 50px 5%;
+    gap: 20px;
+  }
+
+  .front-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .front-hero-content p {
+    font-size: 14px;
+  }
+
+  .front-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .front-primary-btn,
+  .front-secondary-btn {
+    text-align: center;
+  }
+
+  .front-trust {
+    gap: 12px;
+    font-size: 11px;
+  }
+
+  .front-hero-visual {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    flex-shrink: 1;
+    transform: scale(0.85);
+    transform-origin: center;
+    overflow: hidden;
+  }
+
+  .front-circle {
+    width: 260px;
+    height: 260px;
+  }
+
+  .front-medical-icon {
+    font-size: 110px;
+  }
+
+  .front-plus {
+    font-size: 45px;
+  }
+
+  .front-card-one {
+    right: 0;
+  }
+
+  .front-card-two {
+    left: 0;
+  }
+
+  .front-highlights {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 35px 5%;
+  }
+
+  .front-services {
+    padding: 55px 5%;
+  }
+
+  .front-section-heading h2,
+  .front-about-content h2 {
+    font-size: 27px;
+  }
+
+  .front-services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .front-service-card {
+    width: 100%;
+    min-width: 0;
+    padding: 25px 20px;
+  }
+
+  .front-service-card p {
+    min-height: auto;
+  }
+
+  .front-about {
+    padding: 55px 5%;
+    grid-template-columns: 1fr;
+  }
+
+  .front-about-visual {
+    min-height: 240px;
+  }
+
+  .front-about-visual span {
+    font-size: 110px;
+  }
+
+  .front-about-visual div {
+    font-size: 40px;
+    right: 25px;
+  }
+
+  .front-cta {
+    padding: 45px 5%;
+  }
+
+  .front-cta h2 {
+    font-size: 26px;
+  }
+
+  /* Footer mobile layout */
+
+  .front-footer {
+    width: 100%;
+    padding: 35px 5% 20px;
+  }
+
+  .front-footer-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding-bottom: 25px;
+  }
+
+  .front-footer-content > div {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .front-footer p {
+    max-width: 100%;
+  }
+
+  .front-footer-bottom {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 18px;
+    font-size: 12px;
+  }
+}
+
+/* =====================================
+   SMALL MOBILE DEVICES
+===================================== */
+
+@media (max-width: 380px) {
+  .front-brand {
+    font-size: 17px;
+  }
+
+  .front-facility-btn,
+  .front-login-btn {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .front-hero-content h1 {
+    font-size: 29px;
+  }
+
+  .front-hero-visual {
+    transform: scale(0.75);
+    margin: -20px 0;
+  }
+
+  .front-highlights h2 {
+    font-size: 25px;
+  }
+
+  .front-footer {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
